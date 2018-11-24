@@ -13,18 +13,10 @@ def definição():
             de = de.replace(x, '')
         phrase = re.split(r'[.]', de.strip())
         phrase.pop()
-        #print('-=' * 25)
-        #print(f'Palavra a ser procurada: ')
         print('-=' * 25)
         for x in phrase:
             print(f'{x}.')
 
 
-#print('-=' * 25)
 definição()
-#print('-=' * 25)
 
-'''O programa ainda não consegue buscar palavras com acento
-   Algumas palavras o key do dicionário é SuperEntry ao invés de Entry
-   Algumas palavras possuem mais de uma definição preciso de uma solução para isso também.
-   Precisa arrumar a formatação dos itens'''
