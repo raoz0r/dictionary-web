@@ -32,17 +32,3 @@ def imprimir(orth, lista):
 d = search('Jacaré')
 orth, lista = clean(d)
 imprimir(orth, lista)
-
-
-'''
-
-            for x in range(0, len(d['entry']['sense'])):
-                de = str(d['entry']['sense'][x])
-                for x in clean:
-                    de = de.replace(x, '')
-                phrase = re.split(r'[.]', de.strip())
-                phrase.pop()
-                print('-=' * 25)
-                for x in phrase:
-                    print(f'{x}.')'''
-
